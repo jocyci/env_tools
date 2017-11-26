@@ -44,6 +44,7 @@ npm run dev
 
 ## 4.项目预览
 ![Mou icon](./preview/home.jpg)
+![Mou icon](./preview/home.mp4)
 
 ## 5.主要目录结构
 > build
