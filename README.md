@@ -28,13 +28,13 @@ npm install -g vue-cli
 ```
 
 ## 3.如何运行
-打开终端进入到zhongshi_luan目录,安装依赖包
+打开终端进入到env_tools目录,安装依赖包
 
 ```
 npm install
 ```
 
-启动前端开发服务，在zhongshi_luan目录里执行以下命令，成功执行后，会自动打开浏览器访问前端开发环境，浏览地址是:http://localhost:8080
+启动前端开发服务，在env_tools目录里执行以下命令，成功执行后，会自动打开浏览器访问前端开发环境，浏览地址是:http://localhost:8080
 
 ```
 npm run dev
