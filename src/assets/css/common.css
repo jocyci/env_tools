@@ -1,0 +1,19 @@
+/* reset css */
+html,body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,dl,dt,dd { margin: 0; padding: 0;}
+a { text-decoration: none; }
+h1,h2,h3,h4,h5,h6 { line-height: 100%;}
+ul,ol,li { list-style: none; }
+input,select,textarea { outline: none; resize: none; font: 12px/100% "微软雅黑", "Microsoft YaHei"; }
+a { outline: none; cursor: pointer; text-decoration: none; color: #383a4c; }
+img { vertical-align: middle; border: none; }
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+input,textarea{-webkit-appearance:none;}
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none;}
+
+/* common css */
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before,
+.clearfix:after { content: ""; display: table; font: 0/0 a; }
+.clearfix:after { clear: both; } 
+
