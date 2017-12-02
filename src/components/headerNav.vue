@@ -15,11 +15,6 @@
                         <span class="nav-tab" v-bind:class="{ on: route === '/other' }">otherA</span>
                     </router-link>
                 </li>
-                <li class="header-nav-list fl">
-                    <router-link to="*">
-                        <span class="nav-tab" v-bind:class="{ on: route === '/*' }">404</span>
-                    </router-link>
-                </li>
             </ul>
         </nav>
   </header>
