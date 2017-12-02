@@ -1,22 +1,26 @@
 <template>
-    <div id="app" :style="{height: '100%'}">
-        <header-nav :showNav="showNav"></header-nav>
-        <router-view :style="{ 'margin-top': '72px' }"></router-view>
+    <div id="app" :style="{ height: '100%' }">
+        <header-nav v-show="showNav" :class="{ hasSideBar: showSideBar }"></header-nav>
+        <side-bar v-show="showSideBar"></side-bar>
+        <router-view :class="{ hasHeaderNav: showNav, hasSideBar: showSideBar }"></router-view>
     </div>
 </template>
 
 <script>
 import headerNav from './components/headerNav'
+import sideBar from './components/sideBar'
 
 export default {
     name: 'app',
     data () {
         return {
-            showNav: true
+            showNav: true,
+            showSideBar: true
         }
     },
     components: {
-        headerNav
+        headerNav,
+        sideBar
     },
     watch: {
         // 如果路由有变化，会执行该方法
@@ -29,8 +33,10 @@ export default {
             let path = this.$route.path
             if (path === '/' || path === '/homeEnvironmentBoard' || path === '/other') {
                 this.showNav = true
+                this.showSideBar = true
             } else {
                 this.showNav = false
+                this.showSideBar = false
             }
         }
     },
@@ -43,6 +49,12 @@ export default {
 <style scoped>
     body {
         background: #fff;
+    }
+    .hasSideBar {
+        margin-right: 35px;
+    }
+    .hasHeaderNav {
+        margin-top: 72px;
     }
 </style>
 

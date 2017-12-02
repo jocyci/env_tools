@@ -1,4 +1,5 @@
-import { Indicator } from 'mint-ui';
+import { Indicator } from 'mint-ui'
+
 export default {
     pushLoadStack (state) {
         Indicator.open({

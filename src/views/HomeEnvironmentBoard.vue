@@ -115,7 +115,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     text-align: center;
@@ -130,6 +130,7 @@ export default {
 }
 .app-environment .title {
     line-height: 80px;
+    text-align: center;
 }
 .env-nav-wrap {
     height: 40px;
