@@ -26,7 +26,7 @@ export default{
         }
     },
     props: {
-        'sideBar': {
+        'showSideBar': {
             type: Boolean,
             default: true
         }
